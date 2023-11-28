@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>List of Plug in</title>
+
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>Plug-in Name</th>
+                <th>Filename</th>
+                <th>Description</th>
+            </tr>
+
+            <script language="JavaScript" type="text/Javascript">
+                for(i = 0; i<navigator.plugins.length;i++){
+                    document.write("</tr><tr>");
+                    document.write(navigator.plugins[i].name);
+                    document.write("</td><td>");
+
+                        document.write(navigator.plugins[i].Filename);
+                        document.write("</td><td>");
+
+                        document.write(navigator.plugins[i].description);
+                        document.write("</td><td>");
+                }
+            </script>
+
+        </table>
+    </body>
+</html>
